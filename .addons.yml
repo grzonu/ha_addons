@@ -1,0 +1,7 @@
+---
+channel: stable
+addons:
+  nginx-stream:
+    repository: grzonu/ha_addons/tree/master/nginx_stream_proxy
+    target: nginx_stream_proxy
+    image: ghcr.io/grzonu/nginx_stream_proxy/{arch}
