@@ -12,12 +12,10 @@ arch:
   - i386
 init: false
 options:
-  address:
-    - 192.168.0.1:3389 
+  address: 192.168.0.1:3389 
 ports:
   3389/tcp: null
 schema:
-  address:
-    - str
+  address: str
 startup: system
 timeout: 20
