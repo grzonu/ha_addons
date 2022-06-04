@@ -7,4 +7,6 @@ RUN apk add --no-cache nginx
 COPY data/run.sh /
 COPY data/nginx.conf /etc/
 
+RUN chmod +x /run.sh
+
 CMD [ "/run.sh" ]
