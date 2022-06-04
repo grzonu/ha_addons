@@ -1,0 +1,7 @@
+---
+configuration:
+  address:
+    name: Address
+    description: Address to redirect
+network:
+  3389/tcp: The port to access access.

@@ -1,0 +1,24 @@
+---
+version: 1.0.0
+slug: nginx_stream_proxy
+name: NginxStreamProxy
+description: NginxStreamProxy
+url: https://github.com/grzonu/ha_addons
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+image: homeassistant/{arch}-addon-nginx-stream
+init: false
+options:
+  address:
+    - 192.168.0.1:3389 
+ports:
+  3389/tcp: null
+schema:
+  address:
+    - str
+startup: system
+timeout: 20
